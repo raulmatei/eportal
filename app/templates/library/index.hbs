@@ -6,12 +6,6 @@
 urs
 <ul class="book-list">
   {{#each book in content}}
-    <li>{{book.title}}</li>
-    <li>{{book.author}}</li>
-    <li>{{book.book_type}}</li>
-    <li>{{book.year}}</li>
-    <li>{{book.user_ide}}</li>
-    <li>{{book.booked_at}}</li>
-    <li>{{book.return_at}}</li>
+    <li>{{book.title}}({{book.year}}) - {{book.author}} - {{book.book_type}} - {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}</li>
   {{/each}}
 </ul>
