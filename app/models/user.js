@@ -20,7 +20,8 @@ var User = DS.Model.extend({
         			|| Ember.isEmpty(this.get('firstName')) 
         			|| Ember.isEmpty(this.get('lastName'))
         		) ? false : true;
-    }.property('screenName', 'emailAddress', 'firstName', 'lastName')
+    }.property('screenName', 'emailAddress', 'firstName', 'lastName'),
+  inventory : DS.hasMany('inventory')
 });
 
 export default User;
