@@ -1,5 +1,5 @@
 var User = DS.Model.extend({
-  full_name: DS.attr()
+  fullName: DS.attr()
 });
 
 export default User;
