@@ -3,10 +3,13 @@
   <h1>Books</h1>
 </div>
 
-{{#each book in content}}
 <ul class="book-list">
   {{#each book in content}}
-    <li>{{book.title}}({{book.year}}) - {{book.author}} - {{book.book_type}} - {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}</li>
+    <li>
+      
+    <h3>{{book.title}}<em>({{book.year}})</em> - {{book.author}}</h3> - {{book.book_type}} - {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}
+
+    </li>
   {{/each}}
 </ul>
-{{/each}}
+
