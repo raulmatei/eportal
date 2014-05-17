@@ -1,5 +1,6 @@
 var User = DS.Model.extend({
-  fullName: DS.attr()
+  fullName: DS.attr(),
+  inventory : DS.hasMany('inventory')
 });
 
 export default User;
