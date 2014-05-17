@@ -1,0 +1,15 @@
+{{!-- library content stub --}}
+<div class="page-header">
+  <h1>Books</h1>
+</div>
+
+<ul class="book-list">
+  {{#each book in content}}
+    <li>
+
+    <h3>{{book.title}} - {{book.author}}</h3><em>({{book.year}})</em> - {{book.book_type}} & {{book.id}}- {{book.user_id}} - {{book.booked_at}} / {{book.return_at}} <a href={{book.link}} >view details</a>
+
+    </li>
+  {{/each}}
+</ul>
+
