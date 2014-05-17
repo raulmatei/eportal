@@ -21,3 +21,4 @@ test 'index renders available users', ->
     equal listing.length, 2
     equal $(listing[0]).text().trim(), 'User #1'
     equal $(listing[1]).text().trim(), 'User #2'
+
