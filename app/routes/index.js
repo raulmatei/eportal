@@ -1,4 +1,4 @@
-Route = Ember.Route.extend({
+var Route = Ember.Route.extend({
   redirect: function(model) {
     this.transitionTo('users');
   }
