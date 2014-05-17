@@ -6,7 +6,7 @@ Router.map(function() {
   });
   this.resource('library', function(){
     this.route('index');
-    this.route('show', {path: '/show:library_id'} );
+    this.route('show', {path: '/show?id='+this.id }  );
   })
 });
 
