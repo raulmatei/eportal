@@ -1,0 +1,14 @@
+{{!-- Book details stub --}}
+<div class="page-header">
+  <h1>{{book.title}}</h1>
+</div>
+
+<ul class="book-list">
+  {{#each book in content}}
+    <li>
+
+    <h3>{{book.author}}</h3><em>({{book.year}})</em> - <h5>{{book.book_type}} & {{book.id}}- {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}</h5>
+    {{book.description}}
+    </li>
+  {{/each}}
+</ul>
