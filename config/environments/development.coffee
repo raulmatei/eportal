@@ -18,4 +18,7 @@ window.ENV.FIXTURES = {
     { id: 4, name: 'Omega', address: 'Devei 92' }
     { id: 5, name: 'Beta', address: 'Whatever' }
   ]
+  inventory : [
+    { id : 1, deviceType: 'laptop' , vendor : 'Apple', bookedAt : '2014/05/15', returnAt : '2014/05/15', user : '1'}
+  ]
 }

@@ -7,6 +7,10 @@ Router.map(function() {
   this.resource('library', function(){
     this.route('index');
     this.route('show',  {path: '/:book_id'} );
+  });
+  this.resource('inventory', function(){
+    this.route('index');
+    this.route('show',  {path: '/:inventory_id'} );
   })
 });
 
