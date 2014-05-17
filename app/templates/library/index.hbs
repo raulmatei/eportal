@@ -3,9 +3,10 @@
   <h1>Books</h1>
 </div>
 
-urs
+{{#each book in content}}
 <ul class="book-list">
   {{#each book in content}}
     <li>{{book.title}}({{book.year}}) - {{book.author}} - {{book.book_type}} - {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}</li>
   {{/each}}
 </ul>
+{{/each}}
