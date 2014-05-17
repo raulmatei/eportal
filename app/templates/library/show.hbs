@@ -1,14 +1,14 @@
 {{!-- Book details stub --}}
+    {{#link-to 'library'}}go back{{/link-to}}
+
 <div class="page-header">
-  <h1>{{book.title}}</h1>
+  <h1>{{content.title}}</h1>
 </div>
 
 <ul class="book-list">
-  {{#each book in content}}
     <li>
 
-    <h3>{{book.author}}</h3><em>({{book.year}})</em> - <h5>{{book.book_type}} & {{book.id}}- {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}</h5>
-    {{book.description}}
+    <h3>{{content.author}}</h3><em>({{content.year}})</em> - <h5>{{content.book_type}} & {{content.id}}- {{content.user_id}} - {{content.booked_at}} / {{content.return_at}}</h5>
+    {{content.description}}
     </li>
-  {{/each}}
 </ul>
