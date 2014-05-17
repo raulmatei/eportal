@@ -1,1 +1,17 @@
-library content stub
+{{!-- library content stub --}}
+<div class="page-header">
+  <h1>Books</h1>
+</div>
+
+urs
+<ul class="book-list">
+  {{#each book in content}}
+    <li>{{book.title}}</li>
+    <li>{{book.author}}</li>
+    <li>{{book.book_type}}</li>
+    <li>{{book.year}}</li>
+    <li>{{book.user_ide}}</li>
+    <li>{{book.booked_at}}</li>
+    <li>{{book.return_at}}</li>
+  {{/each}}
+</ul>
