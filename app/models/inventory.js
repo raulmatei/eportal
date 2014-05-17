@@ -1,7 +1,7 @@
 var Inventory = DS.Model.extend({
   deviceType: DS.attr(),
   vendor: DS.attr(),
-  userId: DS.attr(),
+  user: DS.belongsTo('user'),
   bookedAt: DS.attr(),
   returnAt: DS.attr()
 });
