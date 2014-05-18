@@ -7,8 +7,17 @@
   {{#each book in content}}
     <li>
 
-    <h3>{{book.title}} - {{book.author}}</h3><em>({{book.year}})</em> - {{book.book_type}} & {{book.id}}- {{book.user_id}} - {{book.booked_at}} / {{book.return_at}}
-    {{#link-to 'library.show' book.id}}view{{/link-to}}
+    <h3>{{book.title}} - {{book.author}}</h3><em>({{book.year}})</em> - {{book.book_type}}
+    <h4>
+        status:
+        {{#if book.status}}
+            booked
+        {{else}}
+            unbooked
+        {{/if}}
+         - {{book.booked_at}} / {{book.return_at}}
+        {{#link-to 'library.show' book.id}}view{{/link-to}}
+    </h4>
 
     </li>
   {{/each}}
