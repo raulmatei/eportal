@@ -5,3 +5,5 @@ vendor
 .tddium*
 testem.log
 build
+ePortal.sublime-project
+ePortal.sublime-workspace

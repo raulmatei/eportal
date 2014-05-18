@@ -9,11 +9,11 @@ module('Users Page', {
       responseText: {
         users: [
           {
-            id: 'USR_1',
-            full_name: 'User #1'
+            id: '1',
+            screen_name: 'tom-dale'
           }, {
-            id: 'USR_2',
-            full_name: 'User #2'
+            id: '2',
+            screen_name: 'andrei-dale'
           }
         ]
       }
@@ -31,7 +31,7 @@ test('index renders available users', function() {
     var listing;
     listing = find('.users-list li');
     equal(listing.length, 2);
-    equal($(listing[0]).text().trim(), 'User #1');
-    equal($(listing[1]).text().trim(), 'User #2');
+    equal($(listing[0]).text().trim(), 'tom-dale');
+    equal($(listing[1]).text().trim(), 'andrei-dale');
   });
 });
