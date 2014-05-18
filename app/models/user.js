@@ -17,11 +17,11 @@ var User = DS.Model.extend({
 
   isValid: function () {
       return (
-      			   Ember.isEmpty(this.get('screenName'))
-      			|| Ember.isEmpty(this.get('emailAddress'))
-      			|| Ember.isEmpty(this.get('firstName'))
-      			|| Ember.isEmpty(this.get('lastName'))
-      		) ? false : true;
+      			Ember.isEmpty(this.get('screenName'))   ||
+      			Ember.isEmpty(this.get('emailAddress')) ||
+      			Ember.isEmpty(this.get('firstName'))	||
+      			Ember.isEmpty(this.get('lastName'))	   
+       		) ? false : true;
   }.property('screenName', 'emailAddress', 'firstName', 'lastName'),
 });
 
