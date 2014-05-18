@@ -18,8 +18,8 @@ Router.map(function() {
   })
 
   this.resource('message', function () {
-    // this.route('index');
-    this.route('show');
+    this.route('index');
+    // this.route('show', { path: '/:message_id' });
   });
 
 });

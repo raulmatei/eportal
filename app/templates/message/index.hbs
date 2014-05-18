@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h1>Mesages</h1>
+</div>
+
+<ul class="book-list">
+  {{#each message in content}}
+    <li>
+
+      <h3>{{message.user.screenName}}</h3><em>({{message.createdAt}})</em>
+      <p>{{message.content}}</p>
+    </li>
+  {{/each}}
+</ul>
+

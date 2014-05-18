@@ -1,6 +1,6 @@
 var Route = Ember.Route.extend({
   model: function(model) {
-    return this.store.find('show');
+    return this.store.find('message');
   }
 });
 
