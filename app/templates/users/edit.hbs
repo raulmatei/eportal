@@ -1,0 +1,19 @@
+<div id="user-page">
+<h1>{{content.title}} {{content.lastName}} {{content.firstName}}</h1>
+<ul>
+  <li><strong>Screen name:</strong> <span> {{input value=content.screenName}}</span></li>
+  <li><strong>Email address:</strong> <span>{{input value=content.emailAddress}}</span></li>
+  <li><strong>First name:</strong> <span>{{input value=content.firstName}}</span></li>
+  <li><strong>Middle name:</strong> <span>{{input value=content.middleName}}</span></li>
+  <li><strong>Last name:</strong> <span>{{input value=content.lastName}}</span></li>
+  <li><strong>Gender:</strong> <span>{{input value=content.gender}}</span></li>
+  <li><strong>Job title:</strong> <span>{{input value=content.jobTitle}}</span></li>
+  <li><strong>Birthday:</strong> <span>{{input value=content.birthday}}</span></li>
+  <li><strong>Address:</strong> <span>{{input value=content.address}}</span></li>
+  <li><strong>Phone number:</strong> <span>{{input value=content.phoneNumber}}</span></li>
+  <li><strong>Skype:</strong> <span>{{input value=content.skype}}</span></li>
+  <li><strong>Facebook:</strong> <span>{{input value=content.facebook}}</span></li>
+</ul>
+
+<button {{action 'save'}}>Save</button>
+</div>
