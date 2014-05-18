@@ -29,7 +29,7 @@ window.ENV.FIXTURES = {
       author: 'Various Artists',
       book_type: 'spirituality',
       year: '1785',
-      user_id: '0',
+      user_id: undefined,
       booked_at: '20.01.2014',
       return_at: '25.12.2014',
       description: 'first description'
@@ -39,7 +39,7 @@ window.ENV.FIXTURES = {
       author: 'Sit Dolor',
       book_type: 'randomness',
       year: '1990',
-      user_id: '1',
+      user_id: undefined,
       booked_at: '23.04.2014',
       return_at: '25.10.2014',
       description: '2nd description'
@@ -49,7 +49,7 @@ window.ENV.FIXTURES = {
       author: 'Franz Kafka',
       book_type: 'existentialism',
       year: '1914',
-      user_id: '2',
+      user_id: undefined,
       booked_at: '22.04.2014',
       return_at: '19.09.2014',
       description: '3rd description'

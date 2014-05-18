@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 window.ENV.development = true;
 
 window.ENV.FIXTURES = {
