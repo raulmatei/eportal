@@ -6,6 +6,9 @@ var Book = DS.Model.extend({
   user_id: DS.attr(),
   booked_at: DS.attr('date'),
   return_at: DS.attr('date'),
+  status: function(){
+    return this.get('user_id') ? 1 : undefined;
+  }.property('user_id'),
 });
 
 export default Book;

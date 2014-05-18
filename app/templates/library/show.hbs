@@ -10,6 +10,18 @@
 
     <h3>{{content.author}}</h3><em>({{content.year}})</em> - <h5>{{content.book_type}} - {{content.booked_at}} / {{content.return_at}}</h5>
     {{content.description}}
-    <h4> status: {{status}} </h4><button {{action "book" on="click"}}>{{buttonText}}</button>
+    <h4> status:
+        {{#if content.status}}
+            booked
+        {{else}}
+            unbooked
+        {{/if}}
+     </h4><button {{action "book" on="click"}}>
+     {{#if content.status}}
+            unbook it
+        {{else}}
+            book it
+        {{/if}}
+</button>
     </li>
 </ul>
