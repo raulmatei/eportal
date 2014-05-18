@@ -2,7 +2,7 @@ window.ENV.development = true
 
 window.ENV.FIXTURES = {
   user: [
-    { id: 1, screenName: 'tom-dale', firstName: 'Tom', lastName: 'Dale', emailAddress: 'tomdale@yahoo.com' }
+    { id: 1, screenName: 'tom-dale', firstName: 'Tom', lastName: 'Dale', middleName: 'Johnson', gender: 'male', jobTitle: 'Ninja',  emailAddress: 'tomdale@yahoo.com', birthday: '08/03/1950', address: 'Santa Clara, California', phoneNumber: '0587328320', skype: 'TDL', facebook: '/tommydaleh' }
     { id: 2, screenName: 'andrei-dale', firstName: 'Andrei', lastName: 'Dale', emailAddress: 'andreidale@yahoo.com'}
     { id: 3, screenName: 'ion-dale', firstName: 'Ion', lastName: 'Dale', emailAddress: 'ion@yahoo.com' }
   ]

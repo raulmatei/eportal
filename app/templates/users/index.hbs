@@ -4,6 +4,6 @@
 
 <ul class="users-list">
   {{#each user in content}}
-  <li>{{user.screenName}}</li>
+  <li>{{#link-to 'users.show' user}}{{user.screenName}}{{/link-to}}</li>
   {{/each}}
 </ul>
