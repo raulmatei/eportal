@@ -3,7 +3,7 @@ var Router = Ember.Router.extend();
 Router.map(function() {
   this.resource('users', function() {
     this.route('index');
-    this.route('show', {path: ':user_id'});
+    this.route('show', {path: '/:user_id'});
   });
 
   this.resource('library', function(){
@@ -20,7 +20,7 @@ Router.map(function() {
     // this.route('index');
     this.route('show');
   });
-  
+
 });
 
 export default Router;
