@@ -7,14 +7,21 @@ module('User Page', {
     $.mockjax({
       url: '/api/v1/users/1',
       responseText: {
-        users: []
-      }
-    });
-
-    $.mockjax({
-      url: '/api/v1/users/1',
-      responseText: {
-        user: { id: 1, screenName: 'tom-dale', firstName: 'Tom', lastName: 'Dale', middleName: 'Johnson', gender: 'male', jobTitle: 'Ninja',  emailAddress: 'tomdale@yahoo.com', birthday: '08/03/1950', address: 'Santa Clara, California', phoneNumber: '0587328320', skype: 'TDL', facebook: '/tommydaleh' }
+        user: {
+          id: 1,
+          screen_name: 'tom-dale',
+          first_name: 'Tom',
+          last_name: 'Dale',
+          middle_name: 'Johnson',
+          gender: 'male',
+          job_title: 'Ninja',
+          email_address: 'tomdale@yahoo.com',
+          birthday: '08/03/1950',
+          address: 'Santa Clara, California',
+          phone_number: '0587328320',
+          skype: 'TDL',
+          facebook: '/tommydaleh'
+        }
       }
     });
   },
@@ -27,13 +34,10 @@ module('User Page', {
 
 test('index renders available users', function() {
   visit('/users/1').then(function() {
-    var userPage = $('#user-page'),
-        props = userPage.find('li');
+    var userFields = find('#user-page li span');
 
-    equal(userPage.length, 1);
-    console.log(userPage);
-    equal(props.eq(0).text().trim(), 'tom-dale');
-    // equal($(userPage[1]).text().trim(), 'User #2');
+    equal(userFields.length, 12);
+    equal($(userFields[0]).text().trim(), 'tom-dale');
   });
 });
 
