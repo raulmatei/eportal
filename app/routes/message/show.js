@@ -1,6 +1,6 @@
 var Route = Ember.Route.extend({
   model: function(params) {
-    return this.store.find('book', params.book_id);
+    // return this.store.find('message', params.book_id);
   }
 });
 
