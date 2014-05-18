@@ -1,5 +1,5 @@
 var Message = DS.Model.extend({
-  userId: DS.attr('number'),
+  user: DS.belongsTo('user'),
   content: DS.attr('string'),
   createdAt: DS.attr('date')
 });
